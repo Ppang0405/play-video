@@ -7,46 +7,13 @@
 
 import SwiftUI
 import AVKit
-
-//struct PlayerView: UIViewControllerRepresentable {
-//  var player: AVPlayer
-//  @Binding var isPlaying: Bool
-//
-//  func makeUIViewController(context: Context) -> AVPlayerViewController {
-//    let controller = AVPlayerViewController()
-//    controller.player = player
-//    controller.allowsPictureInPicturePlayback = true // enables PiP
-//    controller.videoGravity = .resizeAspectFill // This makes video fill container like "cover"
-//    controller.showsPlaybackControls = false // Hide default controls
-//    return controller
-//  }
-//
-//  func updateUIViewController(_ uiViewController: AVPlayerViewController, context: Context) {
-//    // Update the controller if needed
-//  }
-//}
-//
-//class AppDelegate: NSObject, UIApplicationDelegate {
-//  func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey : Any]? = nil) -> Bool {
-//    do {
-//      try AVAudioSession.sharedInstance().setCategory(.playback, mode: .default, options: [.mixWithOthers, .allowAirPlay])
-//      print("Playback OK")
-//      try AVAudioSession.sharedInstance().setActive(true)
-//      print("Session is Active")
-//    } catch {
-//      print(error)
-//    }
-//    return true
-//  }
-//}
+import SwiftUIIntrospect
 
 struct ContentView: View {
-//    @UIApplicationDelegateAdaptor(AppDelegate.self) var appDelegate
     @State var player = AVPlayer(url: URL(string: "https://archive.org/download/ksnn_compilation_master_food_in_space/ksnn_compilation_master_food_in_space_512kb.mp4")!)
     @State private var isPlaying = false
     
     var body: some View {
-//        PlayerView()
         Text("iOSify me")
             .font(.title)
             .fontWeight(.bold)
@@ -90,6 +57,10 @@ struct ContentView: View {
                         }
                         .onDisappear {
                             removeObserver() // 2
+                        }
+                        .introspect(.videoPlayer, on: .iOS(.v14, .v15, .v16, .v17, .v18)) {
+                            print(type(of: $0)) // AVPlayerViewController
+                            $0.showsPlaybackControls = false
                         }
         }
         .foregroundColor(.cyan)

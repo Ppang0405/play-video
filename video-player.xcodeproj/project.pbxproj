@@ -6,6 +6,10 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		CD5F57332DEF56FC00BA5FA1 /* SwiftUIIntrospect in Frameworks */ = {isa = PBXBuildFile; productRef = CD5F57322DEF56FC00BA5FA1 /* SwiftUIIntrospect */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
 		196822FF2DEEFE710033E842 /* video-player.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "video-player.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -23,6 +27,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CD5F57332DEF56FC00BA5FA1 /* SwiftUIIntrospect in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -65,6 +70,7 @@
 			);
 			name = "video-player";
 			packageProductDependencies = (
+				CD5F57322DEF56FC00BA5FA1 /* SwiftUIIntrospect */,
 			);
 			productName = "video-player";
 			productReference = 196822FF2DEEFE710033E842 /* video-player.app */;
@@ -94,6 +100,9 @@
 			);
 			mainGroup = 196822F62DEEFE700033E842;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				CD5F57312DEF56FC00BA5FA1 /* XCRemoteSwiftPackageReference "swiftui-introspect" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 196823002DEEFE710033E842 /* Products */;
 			projectDirPath = "";
@@ -324,6 +333,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		CD5F57312DEF56FC00BA5FA1 /* XCRemoteSwiftPackageReference "swiftui-introspect" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/siteline/swiftui-introspect.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.3.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		CD5F57322DEF56FC00BA5FA1 /* SwiftUIIntrospect */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CD5F57312DEF56FC00BA5FA1 /* XCRemoteSwiftPackageReference "swiftui-introspect" */;
+			productName = SwiftUIIntrospect;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 196822F72DEEFE700033E842 /* Project object */;
 }
