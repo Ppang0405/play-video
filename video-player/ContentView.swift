@@ -38,7 +38,8 @@ struct ContentView: View {
                         }
                         .frame(width: 48, height: 48)
                     }
-                    .padding() // Add padding so button isn't flush with edges
+//                    .padding()
+                    .offset(x: -70, y: -50)
                 }
             })
                         .aspectRatio(contentMode: .fill) // This makes video fill container like "cover"
