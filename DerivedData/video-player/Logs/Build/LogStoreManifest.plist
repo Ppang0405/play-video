@@ -5,6 +5,49 @@
 	<key>logFormatVersion</key>
 	<integer>11</integer>
 	<key>logs</key>
-	<dict/>
+	<dict>
+		<key>082CDC67-45D8-4211-A783-E2366F4DCC33</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>082CDC67-45D8-4211-A783-E2366F4DCC33.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+				<key>totalNumberOfAnalyzerIssues</key>
+				<integer>0</integer>
+				<key>totalNumberOfErrors</key>
+				<integer>0</integer>
+				<key>totalNumberOfTestFailures</key>
+				<integer>0</integer>
+				<key>totalNumberOfWarnings</key>
+				<integer>0</integer>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>video-player project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>video-player</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Build (Automatic) video-player</string>
+			<key>timeStartedRecording</key>
+			<real>770640633.25638604</real>
+			<key>timeStoppedRecording</key>
+			<real>770640634.07101703</real>
+			<key>title</key>
+			<string>Build (Automatic) video-player</string>
+			<key>uniqueIdentifier</key>
+			<string>082CDC67-45D8-4211-A783-E2366F4DCC33</string>
+		</dict>
+	</dict>
 </dict>
 </plist>
